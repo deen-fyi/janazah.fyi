@@ -1,0 +1,66 @@
+// Global styling for this template
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.cs-container {
+  max-width: 808px;
+  padding: 16px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .card {
+    border-radius: 4px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+    background-color: rgba(0, 0, 0, 0.02);
+    padding: 14px 24px;
+    border: none;
+
+    h4 {
+      font-size: 17px;
+    }
+  }
+}
+
+a {
+  color: #4a90e2;
+  &:focus,
+  &:hover {
+    color: darken(#4a90e2, .1);
+  }
+}
+
+body {
+  @include serif-font;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  line-height: 1.43;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgba(0, 0, 0, 0.9);
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 14px;
+}
+
+@font-face {
+  font-family: "Uthman";
+  src: url("fonts/UthmanTN1-V10.otf") format("otf");
+}
+
+@font-face {
+  font-family: "UthmanB";
+  src: url("fonts/UthmanTN1B-V10.otf") format("otf");
+}
